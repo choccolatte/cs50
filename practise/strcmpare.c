@@ -1,4 +1,5 @@
 #include<cs50.h>
+#include<ctype.h>
 #include<stdio.h>
 #include<string.h>
 
@@ -15,5 +16,13 @@ int main(void)
     {
         printf("Different\n");
     }
+
+    char *r = s;
+
+    r[0] = toupper(r[0]);
+
+    printf("s = %s\n", s);
+    printf("t = %s\n", t);
+    printf("r = %s\n", r);
 }
 
